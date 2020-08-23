@@ -1,0 +1,122 @@
+﻿/*loading design*/
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin:0 auto;
+    margin-top:20px;
+}
+ /* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.div_container {
+    width: 100%;
+}
+/*input styling*/
+.search_input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*designing each item that will present the git rep data */
+.gallery_item {
+    box-shadow: 0px 7px 8px 2px black;
+    width: 300px;
+    height: 400px;
+    background-color: #c3c3c3;
+    margin: 0 auto;
+}
+
+
+.gallery_item_avatar {
+    text-align: center;
+}
+    /*designing and sizing the owners avatar*/
+    .gallery_item_avatar img {
+        margin-top: 15px;
+        max-height: 200px;
+        max-width: 300px;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+
+.item_data {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+    .item_data .btn_container {
+        margin-top: 10px;
+    }
+
+        .item_data .btn_container button {
+            padding: 10px 20px;
+            font-size: 20px;
+            transition: background 0.5s;
+            transition: color 0.5s;
+        }
+
+            .item_data .btn_container button:hover {
+                background: none;
+                outline: none;
+                border: none;
+                color: white;
+                transition: background 0.5s;
+                transition: color 0.5s;
+            }
+
+.carousel-control {
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+}
+/*making space between the input to the carousel*/
+.carousel {
+    margin-top: 200px;
+}
+
+.container {
+    width: 70%;
+}
+
+/*defining the carousel height*/
+.carousel-inner {
+    height: 500px;
+}
+
+.flex_display {
+    
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_display div {
+    margin-top:20px;
+}

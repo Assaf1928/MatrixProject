@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="~/Content/index.css" rel="stylesheet" />
+
+
+<div class="div_container">
+
+    <input type="text" class="search_input" id="search" placeholder="search git rep" />
+    @Html.ActionLink("my saved repositories", "ShowBookedRep", "Home", null, null)
+
+    <div class="loader" id="loader" hidden="hidden"></div>
+
+    <div class="container" hidden="hidden" id="container">
+        <div id="carousel-example-generic" class="carousel slide">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" hidden="hidden" id="carousel_inner">
+                <div id="template">
+
+
+                    <div class="gallery_item" id="gallery_item" hidden="hidden">
+                        <div class="gallery_item_avatar">
+                            <img src="https://www.costaloc.com/img/loaders/loader-blue.png">
+                        </div>
+                        <div class="item_data">
+                            <p>
+                            </p>
+                            <div class="btn_container">
+                                <button>BOOK IT</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</div>
+@* Main JS code *@
+<script src="~/Scripts/Index.js"></script>
